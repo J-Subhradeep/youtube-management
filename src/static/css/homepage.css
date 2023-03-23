@@ -79,13 +79,15 @@ body{
     align-items: center;
     justify-content: flex-end;
     padding-right: 2rem;
-}.nav-routes div{
+}.nav-routes div,a{
     padding-right: 2rem;
     font-weight: 550;
     text-shadow: 2px 2px 2px rgb(231, 231, 231);
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
-.nav-routes div:hover{
+.nav-routes div:hover,a:hover{
     font-weight: 600;
    
 }
