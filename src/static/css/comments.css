@@ -5,6 +5,17 @@
     text-decoration: none;
     outline: none;
     border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.material-symbols-outlined{
+    font-size: 2rem;
+    
+}
+
+.material-symbols-outlined:hover{
+    text-shadow: 3px 3px 5px rgb(0 0 0 / 0.2);
+    cursor: pointer;
 }
 
 
@@ -22,19 +33,77 @@
 .thumbnail{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.left{
+    width: 40%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.thumbnail img{
-    margin-top: 4rem;
+.right{
+    margin-top: 3rem;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    top: 0;
+}
+
+.description{
+    width: 100%;
+    /* to give shadow effect */
+}
+
+.thumbnail img{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
     border-radius: 8px;
     display: block;
 }
 
-.vide-title{
+.input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.video-title{
     font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.video-info{
+    font-size: 1.5rem;
+}
+
+.comments-section{
+    width: 100%;
+}
+
+.comments-section input{
+    width: 90%;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: .9375rem 0rem .9375rem 0rem;
+    font-size: 20px;
+    border-color: #334652;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.2);
+    padding: 1.5rem;
 }
