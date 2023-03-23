@@ -10,8 +10,8 @@ document.getElementById("nav-main").insertAdjacentHTML(
 <div class="nav-routes">
   <div class="revenue">Manage Revenue</div>
   <div class="viewers">Manage Viewers</div>
-  <div class="videos">Analyze Videos</div>
-  <div class="subscribers">Subscribers</div>
+  <a href="./comments.html" class="comments">Analyze Comments</a>
+  <a href="./subscribers.html" class="subscribers">Subscribers</div>
 </div>
 <div class="nav-routes2">
 
