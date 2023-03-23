@@ -96,4 +96,11 @@ body{
     position: absolute;
     margin-top: 5rem;
     margin-left: 5rem;
+    padding: 1rem;
+}
+.views-vs-subscribe{
+    height: 18.75rem;
+    width: 25rem;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(226, 226, 226);border-radius: 0.1875rem;
 }
