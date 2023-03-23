@@ -166,7 +166,7 @@ body{
 }
 .views-vs-subscribe{
     height: 18.75rem;
-    width: 25rem;
+    width: 100%;
     background-color: white;
     box-shadow: 2px 2px 4px rgb(226, 226, 226);border-radius: 0.1875rem;
     display: flex;
@@ -299,10 +299,110 @@ body{
     }
 }
 
-.video-item{
-    grid-column-start: span 3;
+
+
+
+
+/* subscribers */
+.subscriber-count{
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(226, 226, 226);border-radius: 0.1875rem;
+    height: 12.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;margin-top: 1rem;
+}
+.total-subscribers{
+    font-size: 1.75rem;
+    font-weight: 500;
     
+}
+.gender-respective-subscriber{
+    display: flex
+    ;
+    flex-direction: column;
+
+}
+.male-subscribers{
+    background: green;
+    padding: .5rem 1rem;
+    border-radius: 0.1875rem;
+    color: white;
+    box-shadow: 2px 2px 4px rgb(219, 219, 219);
+}
+.female-subscribers{
+    background: #1a73e8;
+    padding: .5rem 1rem;
+    border-radius: 0.1875rem;
+    color: white;
+    box-shadow: 2px 2px 4px rgb(219, 219, 219);
+}
+.gender-respective-subscriber span{
+    margin: .5rem;
+    
+}
+
+/* most popular videos */
+.most-popular-videos{
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(226, 226, 226);border-radius: 0.1875rem;
+    min-height: 18.5rem;
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+    padding:1rem;
+    flex-direction: column;
+
+}
+.most-popular-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: inline;
+    height: 3rem;
+}
+@media screen and (max-width:1024px) {
+    .most-popular-videos{
+        margin: 0;
+        margin-top: 1rem;
+    }
+}
+.video-items{
+    overflow-y: scroll;
+    
+}.video-items::-webkit-scrollbar{
+    width: 0.5rem;
+
+}
+.video-items::-webkit-scrollbar-thumb{
+    background-color: #1a73e8;
+    border: 0.125rem solid white;
+}
+.video-item{
+   cursor: pointer;
     width: 100%;
     height: 10rem;
-    background-color: #1a73e8;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    border-bottom: 1px solid black;
+}
+.video-thumbnail-image{
+height: 6.25rem;
+border-radius: 0.1875rem;
+}
+.video-details{
+    padding: 1rem;
+}
+.video-reactions{
+    width: 100%;
+    display: flex;
+}
+.video-reactions div{
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
 }

@@ -41,22 +41,24 @@ document.getElementById("nav-main").insertAdjacentHTML(
   { icon: "search", text: "Subscribers" },
   { icon: "logout", text: "Logout" },
 ].map((value) => {
-  document.getElementById("sidebar-main").insertAdjacentHTML(
-    "beforeend",
-    `<div>
+  if (document.getElementById("sidebar-main"))
+    document.getElementById("sidebar-main").insertAdjacentHTML(
+      "beforeend",
+      `<div>
   <span class="material-icons">
     ${value.icon}
   </span>
   <h6>${value.text}</h6>
 </div>`
-  );
-  document.getElementById("footer-main").insertAdjacentHTML(
-    "beforeend",
-    `<div>
+    );
+  if (document.getElementById("footer-main"))
+    document.getElementById("footer-main").insertAdjacentHTML(
+      "beforeend",
+      `<div>
   <span class="material-icons">
     ${value.icon}
   </span>
   <h6>${value.text}</h6>
 </div>`
-  );
+    );
 });
