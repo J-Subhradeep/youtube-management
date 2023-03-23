@@ -12,7 +12,7 @@ document.getElementById("nav-main").insertAdjacentHTML(
   <div class="viewers">Manage Viewers</div>
   <a href="./comments.html" class="comments3">Analyze Comments</a>
   <a href="./subscribers.html" class="subscribers">Subscribers
-</div>
+</a>
 </div>
 <div class="nav-routes2">
 
