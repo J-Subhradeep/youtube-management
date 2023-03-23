@@ -2,7 +2,7 @@ document.getElementById("nav-main").insertAdjacentHTML(
   "afterBegin",
   `<div class="icon-title">
 
-<img src="../static/images/homepage/unnamed.webp" class="nav-icon" alt="" srcset="">
+<img src="./src/static/images/homepage/unnamed.webp" class="nav-icon" alt="" srcset="">
 <span class="nav-title">Youtube Manager</span>
 </div>
 <div class="nav-routes" >
