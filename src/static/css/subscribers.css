@@ -381,10 +381,18 @@
 
 .name{
     font-weight: bold;
+    position: relative;
     margin-right: .5rem;
+    margin-bottom: 10px;
 }
 
 .mail{
+    display: inline-block;
+    position: relative;
+    top: .625rem;
+}
+
+.mail2{
     display: inline-block;
     position: relative;
     top: .625rem;
@@ -537,4 +545,8 @@
         margin-bottom: 7.125rem;
     }
 
+}
+
+.heading{
+    text-align: center;
 }
