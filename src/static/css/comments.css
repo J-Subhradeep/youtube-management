@@ -131,9 +131,19 @@
     margin-left: .625rem;
 }
 
+.comments-box{
+    width: 100%;
+    height: 60%;
+    height: 40vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .comments-section{
     width: 100%;
-    height: 50%;
+    /* height: 60vh; */
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
     border-color: #334652;
     box-shadow: 0 1.5px 3px rgb(0 0 0 / 0.2);
     border-radius: .3125rem;
@@ -141,8 +151,17 @@
     background-color: white;
 }
 
-.comments{
+.comments-outer{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-color: #334652;
+    box-shadow: 0 0 3px rgb(0 0 0 / 0.2);
+    margin: 10px 0px 10px 0px;
+}
+
+.comments{
+    width: 80%;
     margin: 1.5625rem .3125rem 1.5625rem .3125rem;
     display: flex;
     justify-content: flex-start;
@@ -150,18 +169,35 @@
 }
 
 .comments img{
-    width: 50px;
+    width: 3.125rem;
     border-radius: 100%;
     margin: .5rem
 }
 
 .name{
     font-weight: bold;
-    margin-right: 8px;
+    margin-right: .5rem;
 }
 
 .text{
     display: block;
     position: relative;
     top: .625rem;
+}
+
+#delete-icon{
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+    color: red;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#small-icons{
+    font-size: 1.3rem;
+    position: relative;
+    top: 1.25rem;
+    margin: .625rem;
 }
