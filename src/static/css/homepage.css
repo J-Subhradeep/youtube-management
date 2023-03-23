@@ -15,7 +15,7 @@ body{
 .main{
     height: 100vh;
     width: 100vw;
-    background-color: rgba(238, 238, 238, 0.936);
+    background-color: rgba(243, 243, 243, 0.936);
     
 }
 
@@ -89,6 +89,51 @@ body{
     font-weight: 600;
    
 }
+.nav-routes2{
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.nav-routes2 span{
+    padding-right: 2rem ;
+    cursor: pointer;
+}
+.nav-routes2 span:hover{
+    color: #1a73e8;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-main{
+        grid-template-columns: 3fr 4fr .5fr;
+    }
+}
+@media screen and (max-width:768px){
+    .nav-routes{
+        display: none;
+    }
+    .nav-routes2{
+        display: flex;
+    }
+    .nav-title{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .nav-icon{
+        height: 2.5rem;
+    }
+}
+@media screen and (max-width:463px){
+    .nav-routes{
+        display: none;
+    }
+    .nav-routes2 span{
+        padding-right: 1rem;
+
+    }
+ 
+
+}
 /* body */
 .body-main{
     height: calc(100vh - 5rem);
@@ -96,11 +141,168 @@ body{
     position: absolute;
     margin-top: 5rem;
     margin-left: 5rem;
-    padding: 1rem;
+    padding: 2rem;
+    overflow-y: scroll;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1.5fr;
+    overflow-x: hidden;
+}
+@media screen and (max-width:463px) {
+    .body-main{
+        width: 100vw;
+        
+        margin-left: 0;
+        grid-template-columns: auto;
+    }
+}
+.body-main::-webkit-scrollbar{
+    width: 0.3125rem ;
+    background: white;
+}
+.body-main::-webkit-scrollbar-thumb{
+    background-color: #1a73e8;
+    border-radius: 0.3125rem;
 }
 .views-vs-subscribe{
     height: 18.75rem;
     width: 25rem;
     background-color: white;
     box-shadow: 2px 2px 4px rgb(226, 226, 226);border-radius: 0.1875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pie-image{
+    height: 12.5rem;
+    width: auto;
+}
+.bar-image{
+    height: 15.5rem;
+    width: auto;
+}
+.views-count{
+    height: 18.75rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(226, 226, 226);border-radius: 0.1875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1rem;
+}.views-count span{
+    font-size: .6rem;
+}
+.text{
+    display: none;
+    text-shadow: 1px 1px 2px rgb(196, 196, 196);
+}.min-screen{
+    display: none;
+    
+}
+.footer-main{
+    display: none;
+    height: 5rem;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+.footer-main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.footer-main div:hover{
+    cursor: pointer;
+    color: #1a73e8;
+}
+.message-icon span{
+    font-size: 2rem;
+}
+@media screen and (max-width: 1024px) {
+    .body-main{
+        grid-template-columns: 1fr;
+    }
+    .views-vs-subscribe{
+        /* width: 100vw; */
+        margin: 0;
+        width: 100%;
+        flex-direction: row;
+    }
+    .views-count{
+        margin: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        padding-right: 0;
+    }
+    .text span{
+        margin: .5rem;
+        text-align: center;
+    }
+    .among-all-viewers{
+        display: none;
+    }
+}
+@media screen and (max-width: 656px) {
+    .text{display: none;}
+    .among-all-viewers{
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .min-screen{
+        display: flex;
+        padding-top: 1rem;
+    }.message-icon span{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 592px) {
+    .sidebar-main{
+        display: none;
+    }
+    .body-main{
+        width: 100vw;
+        margin-left: 0;
+    }
+    .min-screen{
+        display: none;
+    }
+    .views-vs-subscribe{
+        flex-direction: column;
+    }
+    .bar-image{
+        height: 90%;
+        width: 90%;
+    }
+    .footer-main{
+        display: flex;
+    }
+    .nav-title{
+        font-size: .7rem;
+    }
+    .body-main{
+        padding-bottom: 7rem;
+    }
+}
+
+.video-item{
+    grid-column-start: span 3;
+    
+    width: 100%;
+    height: 10rem;
+    background-color: #1a73e8;
 }
