@@ -201,3 +201,20 @@
     top: 1.25rem;
     margin: .625rem;
 }
+
+@media screen and (max-width: 1024px) {
+    .left{
+        display: block;
+        width: 70%;
+    }
+    .right{
+        display: block;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .right{
+        width: 80%;
+    }
+}
