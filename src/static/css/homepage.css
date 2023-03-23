@@ -307,7 +307,7 @@ body{
 .subscriber-count{
     background-color: white;
     box-shadow: 2px 2px 4px rgb(226, 226, 226);border-radius: 0.1875rem;
-    height: 12.5rem;
+    height: 18.5rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -317,7 +317,7 @@ body{
 .total-subscribers{
     font-size: 1.75rem;
     font-weight: 500;
-    
+    margin-bottom: 1rem;
 }
 .gender-respective-subscriber{
     display: flex
@@ -354,7 +354,7 @@ body{
     margin: 1rem;
     padding:1rem;
     flex-direction: column;
-
+    
 }
 .most-popular-text{
     font-size: 1.5rem;
@@ -362,7 +362,7 @@ body{
     width: 100%;
     border-bottom: 1px solid black;
     display: inline;
-    height: 3rem;
+    height: 3rem;padding-bottom: 1rem;
 }
 @media screen and (max-width:1024px) {
     .most-popular-videos{
