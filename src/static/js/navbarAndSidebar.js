@@ -1,6 +1,8 @@
 document.getElementById("nav-main").insertAdjacentHTML(
   "afterBegin",
+
   /*html*/ `<div class="icon-title">
+
 
   <img src="./src/static/images/homepage/unnamed.webp" class="nav-icon" alt="" srcset="">
   <span class="nav-title">Youtube Manager</span>
@@ -61,4 +63,6 @@ document.getElementById("nav-main").insertAdjacentHTML(
   <h6>${value.text}</h6>
 </div>`
     );
+
 });
+

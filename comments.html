@@ -1,41 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/static/css/style.css" />
+    <link rel="stylesheet" href="./src/static/css/comments.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="./src/static/css/style.css" />
-  <link rel="stylesheet" href="./src/static/css/comments.css" />
-  <title>Document</title>
-</head>
+  <body>
+    <div class="main">
+      <div class="nav-main" id="nav-main">
 
-<body>
-  <div class="main">
-    <div class="nav-main"></div>
-    <div class="thumbnail-body">
-      <div class="thumbnail">
-        <div class="left">
-          <img src="./src/static/images/comments/316283970_450570717221604_8751096789457175564_n.jpg" alt="thumbnail" />
-        </div>
-        <div class="right">
-          <div class="description">
-            <span class="video-title">Tech Storm 2.23 </span>
-            <span class="video-info">Fasten your seatbelts to hop into the journey of Kolkata's one
-              of the biggest techfest.....</span>
+      </div>
+      <div class="sidebar-main" id="sidebar-main">
+
+      </div>
+      <div class="thumbnail-body">
+        <div class="thumbnail">
+          <div class="left">
+            <img
+              src="./src/static/images/comments/316283970_450570717221604_8751096789457175564_n.jpg"
+              alt="thumbnail"
+            />
+            <div class="likes">
+              <div class="liked">
+                <span id="like" class="material-symbols-outlined"> thumb_up </span>
+                <span>842767</span>
+              </div>
+              <div class="disliked">
+              <span id="like" class="material-symbols-outlined"> thumb_up </span>
+              <span>1293</span>
+            </div>
+            </div>
           </div>
-          <div class="comments-section">
-            <div class="input">
-              <input type="search" placeholder="Search comments" />
-              <span class="material-symbols-outlined"> mood </span>
+          <div class="right">
+            <div class="description">
+              <span class="video-title">Tech Storm 2.23 </span>
+              <span class="video-info"
+                >Fasten your seatbelts to hop into the journey of Kolkata's one
+                of the biggest techfest.....</span
+              >
+            </div>
+            <div class="comments-section">
+              <div class="input">
+                <input
+                  class="search"
+                  type="search"
+                  placeholder="Search comments"
+                />
+                <span id="emoji" class="material-symbols-outlined"> mood </span>
+              </div>
+              <div class="sort">
+                <label class="sort-label" for="select">Sort</label>
+                <select name="" id="select">
+                  <option value="">Select</option>
+                  <option value="Most Recent">Most Recent</option>
+                  <option value="1">1 Month Ago</option>
+                  <option value="6">6 Months Ago</option>
+                  <option value="P">Positive Comments</option>
+                  <option value="n">Negative Comments</option>
+                </select>
+              </div>
+
+              <div class="comments-box">
+              <div class="comments-outer">
+              <div class="comments">
+                <img
+                  src="/src/static/images/comments/sharukh.jpg"
+                  alt="image"
+                />
+                <div>
+                  <span class="name">Sha Rukh Khan</span>
+                  <span class="date">23 March</span>
+                  <span class="text">This is an awsome video</span>
+                  <span id="small-icons" class="material-symbols-outlined"> thumb_up </span>
+                  <span id="small-icons" class="material-symbols-outlined"> thumb_down </span>
+                </div>
+              </div>
+              <span id="delete-icon" class="material-symbols-outlined">
+                delete
+              </span>
+              </div>
+
+              
+              <div class="comments-outer">
+                <div class="comments">
+                  <img
+                    src="/src/static/images/comments/sharukh.jpg"
+                    alt="image"
+                  />
+                  <div>
+                    <span class="name">Sha Rukh Khan</span>
+                    <span class="date">23 March</span>
+                    <span class="text">This is an awsome video</span>
+                    <span id="small-icons" class="material-symbols-outlined"> thumb_up </span>
+                    <span id="small-icons" class="material-symbols-outlined"> thumb_down </span>
+                  </div>
+                </div>
+                <span id="delete-icon" class="material-symbols-outlined">
+                  delete
+                </span>
+                </div>
+
+                <div class="comments-outer">
+                  <div class="comments">
+                    <img
+                      src="/src/static/images/comments/sharukh.jpg"
+                      alt="image"
+                    />
+                    <div>
+                      <span class="name">Sha Rukh Khan</span>
+                      <span class="date">23 March</span>
+                      <span class="text">This is an awsome video</span>
+                      <span id="small-icons" class="material-symbols-outlined"> thumb_up </span>
+                      <span id="small-icons" class="material-symbols-outlined"> thumb_down </span>
+                    </div>
+                  </div>
+                  <span id="delete-icon" class="material-symbols-outlined">
+                    delete
+                  </span>
+                  </div>
+
+              <div class="comments-outer">
+              <div class="comments">
+                <img
+                  src="/src/static/images/comments/sharukh.jpg"
+                  alt="image"
+                />
+                <div>
+                  <span class="name">Sha Rukh Khan</span>
+                  <span class="date">23 March</span>
+                  <span class="text">This is an awsome video</span>
+                  <span id="small-icons" class="material-symbols-outlined"> thumb_up </span>
+                  <span id="small-icons" class="material-symbols-outlined"> thumb_down </span>
+                </div>
+              </div>
+              <span id="delete-icon" class="material-symbols-outlined">
+                delete
+              </span>
+              </div>
+
+              <div class="comments-outer">
+                <div class="comments">
+                  <img
+                    src="/src/static/images/comments/sharukh.jpg"
+                    alt="image"
+                  />
+                  <div>
+                    <span class="name">Sha Rukh Khan</span>
+                    <span class="date">23 March</span>
+                    <span class="text">This is an awsome video</span>
+                    <span id="small-icons" class="material-symbols-outlined"> thumb_up </span>
+                    <span id="small-icons" class="material-symbols-outlined"> thumb_down </span>
+                  </div>
+                </div>
+                <span id="delete-icon" class="material-symbols-outlined">
+                  delete
+                </span>
+                </div>
+
+                <div class="comments-outer">
+                  <div class="comments">
+                    <img
+                      src="/src/static/images/comments/sharukh.jpg"
+                      alt="image"
+                    />
+                    <div>
+                      <span class="name">Sha Rukh Khan</span>
+                      <span class="date">23 March</span>
+                      <span class="text">This is an awsome video</span>
+                      <span id="small-icons" class="material-symbols-outlined"> thumb_up </span>
+                      <span id="small-icons" class="material-symbols-outlined"> thumb_down </span>
+                    </div>
+                  </div>
+                  <span id="delete-icon" class="material-symbols-outlined">
+                    delete
+                  </span>
+                  </div>
+                  </div>
+
+            
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+    <div class="footer-main" id="footer-main"></div>
+    <script src="./src/static/js/navbarAndSidebar.js"></script>
+  </body>
 </html>
